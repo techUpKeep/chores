@@ -1,0 +1,42 @@
+.form-style-3 {
+  font-size: 22px;
+  display: block;
+  text-align: left;
+}
+
+label {
+    display: inline-block;
+    width: 50%;
+  }
+
+input, select {
+    width: 40%;
+}
+
+.btn {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-color:dodgerblue;
+}
+
+
+body::before{
+    color: #000;
+    content: "";
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(img/background\ \(3\).jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25; 
+}
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Chores</title>
+
+  <meta name="description" content="This is a platform for customers to book their services online, anytime, anywhere">
+  <meta name="keywords" content="chores, wash, dry, website, hosting, typing, coding">
+  <meta name="author" content="Phatutshedzo Makushu">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src= "jsFile.js"></script>
+
+</head>
+<body>
+
+
+
+  <h1>CHORES</h1>
+  <div class="form-style-3">
+
+    <form action="https://formsubmit.co/choresassorted@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="false">
+
+      <label for="clothesWash">Clothes Wash and Dry</label>
+      <select name="clothesWash" id="clothesWash">
+        <option value="select">Select</option>
+        <option value="Clothes Wash Small 10">Small Basket - R10</option>
+        <option value="Clothes Wash Medium 20">Medium Basket - R20</option>
+        <option value="Clothes Wash Large 30">Large Basket - R30</option>
+      </select>
+      <br/>
+      <label for="clothesIron">Clothes Iron</label>
+        <select name="clothesIron" id="clothesIron">
+          <option value="select">Select</option>
+          <option value="Clothes Iron Small 10">Small Basket - R10</option>
+          <option value="Clothes Iron Medium 20">Medium Basket - R20</option>
+          <option value="Clothes Iron Large 30">Large Basket - R30</option>
+        </select>
+      <br/>
+
+      <label for="takkieWash">Takkie Wash and Dry R5 a pair</label>
+      <input type="number" min="0" max="1000" id="takkieWash" name="takkieWash"> pair/s<br/>
+
+      <label for="roomClean">Room Clean R1 per sqm</label>
+      <input type="number" min="0" max="1000" id="roomClean" name="roomClean"> sqm<br/>
+
+      <label for="dishesWash">Dishes Wash and Dry</label>
+        <select name="dishesWash" id="dishesWash">
+          <option value="select">Select</option>
+          <option value="Dishes Wash Small 5">Small Load - R5</option>
+          <option value="Dishes Wash Medium 10">Medium Load - R10</option>
+          <option value="Dishes Wash Large 15">Large Load - R15</option>
+        </select>
+      <br/>
+
+      <label for="unplaitHair">Unplait Hair R10 per hour</label>
+      <input type="number" min="0" max="1000" id="unplaitHair" name="unplaitHair"> hrs<br/>
+
+      <label for="chefHire">Chef Hire from R10 per hour</label>
+      <input type="number" min="0" max="1000" id="chefHire" name="chefHire"> hour/s<br/>
+
+      <hr/>
+
+
+      <label for="typing">Typing from R10 per page</label>
+      <input type="number" min="0" max="1000" id="typing" name="typing"> page/s<br/>
+
+      <label for="websiteHosting">Website Hosting R20 per month</label>
+      <input type="number" min="0" max="1000" id="websiteHosting" name="websiteHosting"> website/s<br/>
+
+      <label for="codingLesson">Coding Lesson from R30 per hour</label>
+      <input type="number" min="0" max="1000" id="codingLesson" name="codingLesson"> hour/s<br/>
+
+      <label for="websiteDesign">Website Design R100 per page</label>
+      <input type="number" min="0" max="1000" id="websiteDesign" name="websiteDesign"> hour/s<br/>
+
+
+      <label for="anyOtherChore">Any other Chore/s</label>
+      <input type="textarea" id="anyOtherChore" name="anyOtherChore"><br/>
+
+
+      <hr/>
+      <label for="name">Name</label>
+      <input type="textarea" id="name" name="name" required><br/>
+
+      <label for="whatsappNumber">WhatsApp Number</label>
+      <input type="textarea" id="whatsappNumber" name="whatsappNumber" required><br/>
+
+      <label for="collectOrDropOffDayAndTime">Collect Or DropOff Day and Time</label>
+      <input type="datetime-local" id="collectOrDropOffDayAndTime" name="collectOrDropOffDayAndTime" required><br/>
+
+
+      <label for="dropOrDelivery">Drop or Delivery?</label>
+      <select id = "dropOrDelivery" onchange = "ShowHideDiv()">
+          <option value="Select">Select</option>
+          <option value="Drop">I will drop off</option>
+          <option value="Delivery">Please come and pick up</option>            
+      </select>
+      <div id="divDelivery" style="display: none">
+      <label for="address">Physical Address</label>
+      <input type="text" id="address" name="address" required><br/>
+
+      <label for="flatName">Flat Name</label>
+      <input type="text" id="flatName" name="flatName" required><br/>
+
+      <label for="roomNumber">Room Number</label>
+      <input type="text" id="roomNumber" name="roomNumber" required><br/>
+      </div>
+      <br/>
+      <label for="extraRequests">Extra Requests</label>
+      <input type="textarea" id="extraRequests" name="extraRequests"><br/>
+      <br/>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
+
