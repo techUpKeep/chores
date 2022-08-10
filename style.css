@@ -39,4 +39,8 @@ body::before{
     opacity: 0.25; 
 }
 
+#divDelivery{
+    display: none
+}
+
 
