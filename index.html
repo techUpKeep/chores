@@ -76,7 +76,6 @@
 
       <hr/>
 
-
       <label for="typing">Typing from R10 per page</label>
       <input type="number" min="0" max="1000" id="typing" name="typing"> page/s<br/>
 
@@ -94,6 +93,7 @@
       <input type="textarea" id="anyOtherChore" name="anyOtherChore"><br/>
 
 
+
       <hr/>
       <label for="name">Name</label>
       <input type="textarea" id="name" name="name" required><br/>
@@ -105,22 +105,26 @@
       <input type="datetime-local" id="collectOrDropOffDayAndTime" name="collectOrDropOffDayAndTime" required><br/>
 
 
+
       <label for="dropOrDelivery">Drop or Delivery?</label>
       <select id = "dropOrDelivery" onchange = "ShowHideDiv()">
           <option value="Select">Select</option>
           <option value="Drop">I will drop off</option>
           <option value="Delivery">Please come and pick up</option>            
       </select>
-      <div id="divDelivery" style="display: none">
-      <label for="address">Physical Address</label>
-      <input type="text" id="address" name="address" required><br/>
 
-      <label for="flatName">Flat Name</label>
-      <input type="text" id="flatName" name="flatName" required><br/>
-
-      <label for="roomNumber">Room Number</label>
-      <input type="text" id="roomNumber" name="roomNumber" required><br/>
+      
+     <div id="divDelivery">
+        <label for="address">Physical Address</label>
+        <input type="text" id="address" name="address" ><br/>
+        <label for="flatName">Flat Name</label>
+        <input type="text" id="flatName" name="flatName" ><br/>
+        <label for="roomNumber">Room Number</label>
+        <input type="text" id="roomNumber" name="roomNumber" ><br/>
       </div>
+
+    
+
       <br/>
       <label for="extraRequests">Extra Requests</label>
       <input type="textarea" id="extraRequests" name="extraRequests"><br/>
