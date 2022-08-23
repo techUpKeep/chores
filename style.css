@@ -43,4 +43,15 @@ body::before{
     display: none
 }
 
+/* on smaller screens, where width is 600px and less and height is 700 and less */
+@media screen and (max-width: 600px) , screen and (max-height: 700px) {
 
+  .form-style-3 {
+    font-size: 15px;
+  }
+
+  
+  input, select {
+      width:30%;
+  }
+}
